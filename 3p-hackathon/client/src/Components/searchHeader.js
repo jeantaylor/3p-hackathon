@@ -1,27 +1,24 @@
 import React from "react";
 import TrumpLogo from "../Assets/trump-logo.jpg";
-const form = document.querySelector("#form");
 
 //input to {name} for search
 
-export default function SearchHeader() {
-  // form.addEventListener("click",(event) => {
-  //   event.preventDefault();
-
-  // );}
-  //  }
+export default function SearchHeader(props) {
   return (
     <div className="header__div">
       <img className="header__logo" src={TrumpLogo} alt="trump-logo"></img>
       <div className="header__searchbar__div">
-        <form id="form">
+        <form id="form" onSubmit={props.dump}>
           <input
             className="header__searchbar"
             type="text"
+            name="search"
             placeholder="search..."
           ></input>
 
-          <button className="header__button">Take a Dump</button>
+          <button className="header__button" type="submit">
+            Take a Dump
+          </button>
         </form>
       </div>
     </div>
