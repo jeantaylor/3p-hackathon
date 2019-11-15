@@ -1,0 +1,10 @@
+.random {
+    margin-top: 20px;
+    display: flex; 
+    justify-content: center;
+
+    &__image {
+    height: auto;
+    width: 70%;
+    }
+}
