@@ -30,3 +30,27 @@ h5 {
 }
 @import "./partials/_footer";
 @import "./partials/_randomMeme";
+
+@charset 'utf-8'; 
+
+html, 
+body {
+    margin: 0; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    height: 100vh; 
+    box-sizing: border-box; 
+}
+
+
+/* Enforces border-box for whole site */
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit; 
+}
+
+/* Imports */
+@import "./partials/breakpoints"; 
+@import "./partials/tronald"; 
+@import "./partials/_footer"; 
+@import "./partials/_randomMeme"; 
