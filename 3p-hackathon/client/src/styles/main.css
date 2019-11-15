@@ -1,7 +1,8 @@
 html,
 body {
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "AvenirRegular";
+  line-height: 1.8rem;
   height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,6 +15,43 @@ body {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
+
+h1 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+h4 {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+h5 {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.footer {
+  background-color: #e50914;
+  height: 80px;
+}
+
+.footer__contacts-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  height: 100%;
 
 /* Imports */
 /* Media Query: Tablet */

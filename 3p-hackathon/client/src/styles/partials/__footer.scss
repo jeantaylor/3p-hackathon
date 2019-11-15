@@ -1,0 +1,13 @@
+.footer {
+  background-color: #e50914;
+  height: 80px;
+  &__contacts {
+    &-div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: #fff;
+      height: 100%;
+    }
+  }
+}
