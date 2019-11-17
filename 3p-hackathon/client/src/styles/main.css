@@ -25,7 +25,7 @@ body,
   width: 100%;
   padding: 0 5%;
   min-height: 80px;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #e50914;
 }
 
 .header__logo {
@@ -41,6 +41,7 @@ body,
   color: black;
   height: 25px;
   padding: 1px 3px;
+  font-size: 20px;
 }
 
 .header__searchbar:focus {
@@ -50,21 +51,25 @@ body,
 .header__searchbar::-webkit-input-placeholder {
   color: black;
   padding-left: 3px;
+  font-size: 20px;
 }
 
 .header__searchbar:-ms-input-placeholder {
   color: black;
   padding-left: 3px;
+  font-size: 20px;
 }
 
 .header__searchbar::-ms-input-placeholder {
   color: black;
   padding-left: 3px;
+  font-size: 20px;
 }
 
 .header__searchbar::placeholder {
   color: black;
   padding-left: 3px;
+  font-size: 20px;
 }
 
 .header__button {
@@ -112,6 +117,12 @@ body,
   .header__button {
     height: 40px;
     font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header__div {
+    height: 200px;
   }
 }
 
@@ -165,7 +176,7 @@ h5 {
 
 .random__image {
   height: auto;
-  width: 70%;
+  width: 30%;
 }
 
 html,
@@ -233,6 +244,12 @@ body {
   padding: 10px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .tronald__img {
+    height: 335px;
+  }
+}
+
 .footer {
   background-color: #e50914;
   height: 80px;
@@ -263,6 +280,6 @@ body {
 
 .random__image {
   height: auto;
-  width: 70%;
+  width: 30%;
 }
 /*# sourceMappingURL=main.css.map */
