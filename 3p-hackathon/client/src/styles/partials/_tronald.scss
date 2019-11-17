@@ -28,3 +28,10 @@
     padding: 10px;
   }
 }
+@include desktop {
+  .tronald {
+    &__img {
+      height: 335px;
+    }
+  }
+}

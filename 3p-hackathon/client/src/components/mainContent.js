@@ -27,8 +27,8 @@ export default class mainContent extends Component {
   //function to get name quotes for specific name
   queryQuote = event => {
     event.preventDefault();
-    console.log(event.target);
-    console.log(event.target.search.value);
+    // console.log(event.target);
+    // console.log(event.target.search.value);
     const trumpURL = `${corsURL}https://api.tronalddump.io/search/quote?query=${event.target.search.value}`;
     axios.get(trumpURL).then(res => {
       if (
@@ -39,7 +39,8 @@ export default class mainContent extends Component {
           quote: "I haven't spoken about that yet... Must not be very important"
         });
       } else {
-        const data = res.data._embedded.quotes[0].value;
+        let num = Math.floor(Math.random() * 3) + 1;
+        const data = res.data._embedded.quotes[num].value;
         this.setState({ quote: data });
       }
     });
